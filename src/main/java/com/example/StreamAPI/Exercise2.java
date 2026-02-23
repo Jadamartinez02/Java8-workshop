@@ -27,6 +27,7 @@ public class Exercise2 {
     //3.2 Limit and skip
     static List<Integer> moreNumber = IntStream.rangeClosed(1, 100).boxed().collect(Collectors.toList()); //No sabia que exisitia, gracias gemini, yo solo te pedi una lista del 1 al 100 💕
     static List<Integer> numbersFilter =  moreNumber.stream().skip(19).limit(11).collect(Collectors.toList());    
+    // static List<Integer> otherNumbers = moreNumber.stream().skip(0).collect(Collectors.toList());
     //3.3 Peek
     static List<Integer> numberPeek =  numbers.stream().peek(n -> System.out.println("Primera entrada: " + n)).filter(n -> n >= 10).peek(n -> System.out.println("Entrada filter "+ n) ).sorted().collect(Collectors.toList());
     
@@ -36,6 +37,7 @@ public class Exercise2 {
         System.out.println(numberList);
         System.out.println(wordsCaseInsensitive);
         System.out.println(numbersFilter);
+        // System.out.println(otherNumbers);
         System.out.println("Filtrado numeros peek" + numberPeek);
     }
 
