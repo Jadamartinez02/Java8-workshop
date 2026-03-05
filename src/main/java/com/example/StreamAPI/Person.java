@@ -19,5 +19,9 @@ public class Person {
     public String getCity() {
         return city;
     }
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", age=" + age + ", city=" + city + "]";
+    }
     
 }

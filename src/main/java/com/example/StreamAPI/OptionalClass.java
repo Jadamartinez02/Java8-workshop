@@ -31,7 +31,7 @@ public class OptionalClass {
     // 5.1 solucion improvisada 
     public Optional<Person> searchById(Integer age) {
         if (age == 1L) {
-            return Optional.of(new Person("Mafe", 30, "Pasto"));
+            return Optional.of(new Person("Mafe", 26, "Pasto"));
         }
         return Optional.empty();
     }
